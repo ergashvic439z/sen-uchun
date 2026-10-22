@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#170d20">
+  <meta name="description" content="Dilafruz uchun mehr bilan yaratilgan shaxsiy, romantik va samimiy olam.">
+  <title>Dilafruz — qalbimdagi eng go‘zal ism</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Bosh sahifa"><span class="brand-mark">♡</span><span>DILAFRUZ<span class="brand-dot">.</span></span></a>
+    <button class="sound-toggle" id="soundToggle" aria-label="Yurakchalarni yoqish/o‘chirish" title="Yurakchalar">♡ <span>Mehr kayfiyati</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="sparkle">✦</span> DILAFRUZ UCHUN, YURAGIMDAN <span class="sparkle">✦</span></div>
+      <h1>Bu dunyoda <em>eng go‘zal ism</em><br>— <span class="script">Dilafruz, mazzim.</span></h1>
+      <p class="hero-copy">Dilafruz, ba’zi tuyg‘ularni oddiy gap bilan aytib bo‘lmaydi. Shu sabab senga atab, mehrimdan alohida bir olam yaratdim. Har bir sahifasida sen uchun aytilmagan gaplarim bor.</p>
+      <div class="hero-actions">
+        <button class="primary-btn" id="openHeart">Olamimga kir <span>↗</span></button>
+        <button class="text-btn" id="surpriseBtn">Meni hayron qoldir <span>✧</span></button>
+      </div>
+      <div class="hero-note"><span class="pulse-dot"></span> Har bir satr Dilafruz uchun</div>
+      <div class="hero-orbit orbit-a"></div><div class="hero-orbit orbit-b"></div>
+      <div class="heart-art" aria-hidden="true"><span>♥</span><i>✦</i><b>♡</b><small>✧</small></div>
+    </section>
+
+    <section class="welcome hidden" id="welcome">
+      <div class="section-heading">
+        <span class="mini-label">SENING UCHUN</span>
+        <h2>Qaysi mehrni ochamiz, <em>mazzim?</em></h2>
+        <p>Ko‘nglingga yaqin bo‘lgan bo‘limni tanla. Yana-yana ochsang ham, har gal yangi gap chiqadi.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card rose" data-category="erkalash"><span class="card-icon">♡</span><span class="card-count">01 / ERKALASH</span><strong>Erkalashlarim</strong><small>Asalim, altinim, mazzim…</small><span class="card-arrow">↗</span></button>
+        <button class="category-card lilac" data-category="hislar"><span class="card-icon">✧</span><span class="card-count">02 / HISLAR</span><strong>Ko‘nglimdagilar</strong><small>Yurakdan chiqqan samimiy so‘zlar</small><span class="card-arrow">↗</span></button>
+        <button class="category-card gold" data-category="soginch"><span class="card-icon">☾</span><span class="card-count">03 / SOG‘INCH</span><strong>Sog‘inch xatlari</strong><small>Uzoqda bo‘lsang ham, yaqinimsan</small><span class="card-arrow">↗</span></button>
+        <button class="category-card blue" data-category="va'da"><span class="card-icon">∞</span><span class="card-count">04 / VA’DALAR</span><strong>Mehrli va’dalar</strong><small>So‘z emas, amalda ko‘rinadigan mehr</small><span class="card-arrow">↗</span></button>
+      </div>
+      <div class="quote-panel">
+        <div class="quote-mark">“</div><p id="dailyQuote">Sen borliging bilan oddiy kunlarimni ham chiroyli qilib yuborasan, altinim.</p>
+        <div class="quote-bottom"><span>KO‘NGILDAN — KO‘NGILGA</span><button id="newQuote" aria-label="Yangi gap">Yana birini ayt ↻</button></div>
+      </div>
+    </section>
+
+    <section class="message-view hidden" id="messageView">
+      <button class="back-btn" id="backBtn">← Bo‘limlarga qaytish</button>
+      <div class="message-heading"><span class="mini-label" id="categoryLabel">SENING UCHUN</span><h2 id="categoryTitle">Erkalashlarim</h2><p id="categoryDesc">Senga atalgan samimiy gaplar.</p></div>
+      <article class="message-card">
+        <div class="message-top"><span class="message-heart">♡</span><span id="messageIndex">MEHR XATI · 001</span><span class="tiny-stars">✦ ✧ ✦</span></div>
+        <p class="message-text" id="messageText">Mazzim, sen mening ko‘nglimga eng yaqin insonsan.</p>
+        <div class="message-bottom"><span>YURAKDAN YOZILDI</span><span>♡</span></div>
+      </article>
+      <div class="message-actions">
+        <button class="primary-btn" id="nextMessage">Yana bir mehr <span>→</span></button>
+        <button class="secondary-btn" id="copyMessage">Gapni ko‘chir ♧</button>
+        <button class="secondary-btn" id="favoriteBtn">♡ Sevimlilar</button>
+      </div>
+      <p class="counter" id="counter">1 / 320 dan ortiq samimiy satr</p>
+    </section>
+
+    <section class="favorites hidden" id="favorites">
+      <div class="section-heading"><span class="mini-label">KO‘NGILGA YAQIN</span><h2>Sevimli <em>gaplaring</em></h2><p>Yoqtirgan satrlaring shu yerda saqlanadi — bu qurilmangning o‘zida.</p></div>
+      <div id="favoriteList" class="favorite-list"><p class="empty-state">Hali saqlangan gap yo‘q, mazzim. Biror gapni ♡ bilan saqlab qo‘y.</p></div>
+    </section>
+  </main>
+
+  <footer><div class="footer-heart">♡</div><p>Dilafruz, bu shunchaki sahifa emas — senga atalgan mehr.</p><small>DILAFRUZ UCHUN MUHABBAT BILAN YARATILDI</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
